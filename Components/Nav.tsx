@@ -8,10 +8,14 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 
 
+type Props={
+  openav: ()=>void
+}
+  
 
 
 
-const Nav = () => {
+const Nav = ({openav}:Props) => {
   
   
   
@@ -87,7 +91,7 @@ useEffect(() => {
             <button className='py-2.5 px-8 text-xs md:text-sm hidden sm:block bg-cyan-600 hover:bg-cyan-800  rounded-sm transition-all duration-1000'>Job post</button>
 
             {/* darkbutton */}
-            <HiBars3BottomRight className='w-8 h-8 text-black cursor-pointer lg:hidden'/>
+            <HiBars3BottomRight className='w-8 h-8 text-black cursor-pointer lg:hidden' onClick={openav}/>
 
          </div>
 
