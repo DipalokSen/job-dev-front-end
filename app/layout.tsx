@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Nav from "@/Components/Nav";
 import ResponsiveNav from "@/Components/ResponsiveNav";
+import Provider from "@/Components/Hoc/Provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,14 +27,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
+
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+    <Provider>
+
         {/* <Nav/> */}
         <ResponsiveNav/>
         {children}
+
+    </Provider>
+
       </body>
     </html>
+
   );
 }

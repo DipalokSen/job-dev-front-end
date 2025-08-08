@@ -6,12 +6,13 @@ import { HiBars3BottomRight } from 'react-icons/hi2'
 import { LuNetwork } from 'react-icons/lu'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import ThemeToggler from './ThemeToggler'
 
 
 type Props={
   openav: ()=>void
 }
-  
+
 
 
 
@@ -89,7 +90,7 @@ useEffect(() => {
 
             <button className='py-2.5 px-8 text-xs md:text-sm bg-gray-100 hover:bg-gray-300  rounded-sm transition-all duration-1000'>Login/register</button>
             <button className='py-2.5 px-8 text-xs md:text-sm hidden sm:block bg-cyan-600 hover:bg-cyan-800  rounded-sm transition-all duration-1000'>Job post</button>
-
+            <ThemeToggler/>
             {/* darkbutton */}
             <HiBars3BottomRight className='w-8 h-8 text-black cursor-pointer lg:hidden' onClick={openav}/>
 
