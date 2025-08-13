@@ -20,7 +20,7 @@ const ThemeToggler = () => {
     return (
     <button className='p-2 transition w-11 h-11 bg-blue-950 dark:bg-white rounded-full flex flex-col justify-center items-center text-white' onClick={()=>setTheme(currentTheme === "dark" ? "light" : "dark")}    >
      
-     {currentTheme==="dark"?<BiSun/> : <BiMoon/>}
+     {currentTheme==="dark"?<BiSun className='bg-white text-black'/> : <BiMoon/>}
     </button>
   )
 }

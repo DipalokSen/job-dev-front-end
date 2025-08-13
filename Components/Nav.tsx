@@ -46,7 +46,7 @@ useEffect(() => {
   
   
   return (
-    <div className={`w-full transition-all duration-1000 h-[12vh] ${bgNav?"bg-white shadow-md":"bg-transparent"} fixed top-0 left-0 z-50`}>
+    <div className={`w-full transition-all duration-1000 h-[12vh] ${bgNav?"bg-white dark:bg-gray-900 shadow-md":"bg-transparent"} fixed top-0 left-0 z-50`}>
 
         <div className='flex items-center justify-between h-full w-[92%] mx-auto '>
 
@@ -55,11 +55,11 @@ useEffect(() => {
                 
                 <div className="flex items-center space-x-2">
 
-                    <div className='w-10 h-10 bg-cyan-800 flex items-center justify-center rounded-full flex-col'>
-                        <LuNetwork className='w-8 h-8 text-white'/>
+                    <div className='w-10 h-10 bg-cyan-800 flex items-center justify-center rounded-full flex-col dark:bg-white'>
+                        <LuNetwork className='w-8 h-8 text-white dark:text-black text-[10px]'/>
                     </div>
 
-                   <h1 className='text-cyan-800 font-bold md:text-2xl hidden sm:block'>CyberJob</h1>
+                   <h1 className='text-cyan-800 font-bold md:text-2xl hidden sm:block '>CyberJob</h1>
 
                 </div>
 
@@ -68,7 +68,7 @@ useEffect(() => {
           <div className='hidden lg:flex items-center space-x-10'>
 
               {NavLinks.map((link)=>(
-                <Link href={link.url} key={link.id} className='text-cyan-800 font-semibold hover:text-cyan-600 transition-all duration-300'>
+                <Link href={link.url} key={link.id} className='text-cyan-800 font-semibold hover:text-cyan-600 transition-all dark:text-white duration-300'>
                   
                   <p>{link.label}</p>
 
@@ -88,7 +88,7 @@ useEffect(() => {
 
          <div className='flex items-center space-x-4'>
 
-            <button className='py-2.5 px-8 text-xs md:text-sm bg-gray-100 hover:bg-gray-300  rounded-sm transition-all duration-1000'>Login/register</button>
+            <button className='py-2.5 px-8 text-xs md:text-sm bg-gray-100 hover:bg-gray-300 dark:text-white dark:bg-gray-800  rounded-sm transition-all duration-1000'>Login/register</button>
             <button className='py-2.5 px-8 text-xs md:text-sm hidden sm:block bg-cyan-600 hover:bg-cyan-800  rounded-sm transition-all duration-1000'>Job post</button>
             <ThemeToggler/>
             {/* darkbutton */}
