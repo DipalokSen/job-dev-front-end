@@ -12,7 +12,7 @@ const FeaturedJobs = () => {
           subheading    ='Explore the latest job opportunities in various categories.' 
           />
 
-          <div className="w-[90%] sm:w-[80%] mx-auto grid sm:grid-cols-2 md:grid-cols-2 lg:grid-col-3 xl:grid-cols-3 bg-purple-500">
+          <div className="w-[90%] sm:w-[80%] mx-auto grid sm:grid-cols-2 md:grid-cols-2 lg:grid-col-3 xl:grid-cols-3  mt-4">
             {
                 CompanyData.map((job)=>{
                     return (

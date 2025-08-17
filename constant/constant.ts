@@ -98,62 +98,105 @@ export const CompanyData = [
     image: "/images/c1.png",
     name: "Udemy",
     location: "London, UK",
-    position: "20",
+    position: "segemnt",
+    jobType: "Full Time",
+    urgency: "Urgent",
   },
   {
     id: 2,
     image: "/images/c2.png",
     name: "Coursera",
     location: "New York, USA",
-    position: "15",
+    position: "segemnt",
+    jobType: "Part Time",
+    urgency: "Normal",
   },
   {
     id: 3,
     image: "/images/c3.png",
     name: "edX",
     location: "Boston, USA",
-    position: "10",
+    position: "segemnt",
+    jobType: "Internship",
+    urgency: "Urgent",
   },
   {
     id: 4,
     image: "/images/c4.png",
     name: "Skillshare",
     location: "Toronto, Canada",
-    position: "8",
+    position: "segemnt",
+    jobType: "Full Time",
+    urgency: "Normal",
   },
   {
     id: 5,
-    image: "/images/c5.png",
+    image: "/images/j1.png",
     name: "LinkedIn Learning",
     location: "San Francisco, USA",
-    position: "12",
+    position: "segemnt",
+    jobType: "Remote",
+    urgency: "Urgent",
   },
   {
     id: 6,
-    image: "/images/c6.png",
+    image: "/images/j2.png",
     name: "Pluralsight",
     location: "Salt Lake City, USA",
-    position: "6",
+    position: "segemnt",
+    jobType: "Full Time",
+    urgency: "Low",
   },
   {
     id: 7,
-    image: "/images/c7.png",
+    image: "/images/j3.png",
     name: "Khan Academy",
-    location: "Mountain View, USA",
-    position: "18",
+    location: "Mountain, USA",
+    position: "segemnt",
+    jobType: "Contract",
+    urgency: "Normal",
   },
   {
     id: 8,
-    image: "/images/c8.png",
+    image: "/images/j4.png",
     name: "FutureLearn",
     location: "London, UK",
-    position: "7",
+    position: "segemnt",
+    jobType: "Part Time",
+    urgency: "Urgent",
+  },
+ 
+  
+];
+
+
+export const companies = [
+  {
+    id: 1,
+    image: "./images/c1.png",
+    name: "Google",
+    location: "Mountain View, USA",
+    position: "Software Engineer"
   },
   {
-    id: 9,
-    image: "/images/c9.png",
-    name: "Codecademy",
-    location: "Berlin, Germany",
-    position: "14",
+    id: 2,
+    image: "./images/c2.png",
+    name: "Microsoft",
+    location: "Redmond, USA",
+    position: "Cloud Architect"
   },
+  {
+    id: 3,
+    image: "./images/c3.png",
+    name: "Apple",
+    location: "Cupertino, USA",
+    position: "Product Designer"
+  },
+  {
+    id: 4,
+    image: "./images/c4.png",
+    name: "Figma",
+    location: "Dhaka, Bangladesh",
+    position: "UI/UX Designer"
+  }
 ];
