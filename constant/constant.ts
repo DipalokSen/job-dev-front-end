@@ -200,3 +200,37 @@ export const companies = [
     position: "UI/UX Designer"
   }
 ];
+
+
+export const plan = [
+  {
+    plan_id: 1,
+    plan_name: "Basic",
+    price: 199,
+    job_postings: 1,
+    featured_jobs: 0,
+    display_duration_days: 20,
+    support_type: "Premium 24/7",
+    status: "Active"
+  },
+  {
+    plan_id: 2,
+    plan_name: "Standard",
+    price: 399,
+    job_postings: 1,
+    featured_jobs: 0,
+    display_duration_days: 20,
+    support_type: "Premium 24/7",
+    status: "Recommended"
+  },
+  {
+    plan_id: 3,
+    plan_name: "Extended",
+    price: 799,
+    job_postings: 1,
+    featured_jobs: 0,
+    display_duration_days: 20,
+    support_type: "Premium 24/7",
+    status: "Inactive"
+  }
+];
